@@ -1,0 +1,11 @@
+<% include ../partial/header %>
+
+<div id="ncform">
+  <h1>Add a new comment to <%= campground.name %></h1>
+  <form action="/campgrounds/<%= campground._id %>/comments" method="post">
+    <input class="form-control" type="text" name="comment[text]" placeholder="Text">
+    <button class="btn btn-primary" type="submit">Add Campground</button>
+  </form>
+</div>
+
+<% include ../partial/footer %>

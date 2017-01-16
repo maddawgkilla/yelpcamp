@@ -1,0 +1,11 @@
+<% include ../partial/header %>
+
+<div id="ncform">
+  <h1>Edit your comment for <%= campground.name %></h1>
+  <form action="/campgrounds/<%= campground._id %>/comments/<%=comment._id%>/edit?_method=PUT" method="POST">
+    <input class="form-control" type="text" name="comment[text]" value="<%=comment.text%>">
+    <button class="btn btn-primary" type="submit">Edit Comments</button>
+  </form>
+</div>
+
+<% include ../partial/footer %>

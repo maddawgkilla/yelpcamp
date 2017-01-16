@@ -1,0 +1,38 @@
+#ncform {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#ncform h1 {
+    text-align: center;
+}
+
+#ncform input {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#ncform form button {
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 10px;
+}
+
+.comment-headers {
+    display: inline-block;
+}
+
+.delete-form {
+    display: inline-block;
+}
