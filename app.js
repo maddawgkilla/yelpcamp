@@ -19,7 +19,9 @@ var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index")
     // seedDB();
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+// mongodb://sami:sami@ds111549.mlab.com:11549/samiyelpcamp
+mongoose.connect("mongodb://sami:sami@ds111549.mlab.com:11549/samiyelpcamp");
 
 app.use(flash());
 
@@ -48,6 +50,6 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 app.use(indexRoutes);
 
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen("3000", "localhost", function() {
     console.log("Server has started!");
 });
